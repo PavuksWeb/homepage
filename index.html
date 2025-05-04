@@ -1,10 +1,244 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Résumé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Resume</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">My Resume</div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero" id="about">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Vladyslav Lomakin</h1>
+            <p class="hero-subtitle">Full Stack Developer</p>
+            <p class="hero-description">
+              I'm a passionate full-stack developer with 2+ years of experience
+              building web applications using modern technologies. I specialize
+              in creating responsive, accessible, and high-performing web
+              experiences.
+            </p>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+          <div class="hero-image">
+            <img src="assets/avatar.webp" alt="Vladyslav Lomakin" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education" class="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="education-grid">
+          <div class="education-card">
+            <span class="education-date">2023 - 2024</span>
+            <h3>Completing JavaScript course</h3>
+            <p class="education-location">Udemy</p>
+            <p>
+              The most comprehensive and in-depth JavaScript course on Udemy and
+              learn JavaScript from the ground up.
+            </p>
+          </div>
+          <div class="education-card">
+            <span class="education-date">2024 - 2025</span>
+            <h3>Completing React, NodeJS and TypeScript courses</h3>
+            <p class="education-location">Udemy</p>
+            <p>
+              Completing React, NodeJS and TypeScript courses and making
+              pet-projects using various technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Technical Skills</h3>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML/CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>React</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Node.js</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <div class="soft-skills">
+              <span class="soft-skill">Communication</span>
+              <span class="soft-skill">Problem Solving</span>
+              <span class="soft-skill">Time Management</span>
+              <span class="soft-skill">Adaptability</span>
+              <span class="soft-skill">Critical Thinking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="assets/the-wild-oasis.webp"
+              alt="Management App"
+            />
+            <div class="project-content">
+              <h3>The Wild Oasis</h3>
+              <p>
+                SPA for management hotel business, that provides detailed
+                statistics on sales, customers.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Redux</span>
+                <span class="project-tag">Supabase</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="assets/the-wild-oasis-website.webp"
+              alt="Website"
+            />
+            <div class="project-content">
+              <h3>The Wild Oasis Website</h3>
+              <p>
+                A hotel business website for customers, that provides
+                registration and booking functionality.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">NextJS</span>
+                <span class="project-tag">Supabase</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="assets/natours-app.webp"
+              alt="Weather Dashboard"
+            />
+            <div class="project-content">
+              <h3>Natours App</h3>
+              <p>
+                A website for tourism business that provides registration for
+                customers, booking functionality and payment via Stripe.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">NodeJS</span>
+                <span class="project-tag">Express</span>
+                <span class="project-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h3>Location</h3>
+                <p>Kyiv, Ukrane</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h3>Email</h3>
+                <p>vlad.lomakin2002@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h3>Phone</h3>
+                <p>+380-98-428-15-27</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a href="https://github.com/PavuksWeb" class="social-link">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vladyslav-lomakin-67b68325a/"
+              class="social-link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://t.me/Pavuk_4" class="social-link">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
